@@ -39,6 +39,31 @@ public class Calculator {
 			// Add your code
             scan.close();
 			break;
+		case 5:
+			double first;
+			double second;
+			System.out.println("Please enter first value");
+			first= scan.nextDouble();
+			System.out.println("Please enter second value");
+			second = scan.nextDouble();
+			double result = calc.modulus(first, second);
+			System.out.println("Your result is : " + result);
+            scan.close();
+			break;
+		case 6:
+			double firstNumber;
+			double secondNumber;
+			double thirdNumber;
+			System.out.println("Please enter first value");
+			firstNumber= scan.nextDouble();
+			System.out.println("Please enter second value");
+			secondNumber = scan.nextDouble();
+			System.out.println("Please enter third value");
+			thirdNumber = scan.nextDouble();
+			double modulusComplexResult = calc.modulusComplex(firstNumber, secondNumber ,thirdNumber);
+			System.out.println("Your result is : " + modulusComplexResult);
+            scan.close();
+			break;
 		default:
 			System.out.println("Wrong choice");
 			break;

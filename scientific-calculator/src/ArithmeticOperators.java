@@ -10,6 +10,8 @@ public class ArithmeticOperators {
 		System.out.println("2.Substraction");
 		System.out.println("3.Multiplication");
 		System.out.println("4.Division");
+		System.out.println("5.Modulus");
+		System.out.println("6.Modulus Complex");
 
 	}
 
@@ -42,6 +44,30 @@ public class ArithmeticOperators {
 		return val;
 	}
 
+	/**
+	 * This function performs modulus operation on two numbers
+	 * @param firstNumber
+	 * @param secondNumber
+	 * @return
+	 */
+	public double modulus(double firstNumber, double secondNumber)
+	{
+		double val = firstNumber % secondNumber;
+		return val;
+	}
 
+
+	/**
+	 * This function performs modulus operation on three numbers
+	 * @param firstNumber
+	 * @param secondNumber
+	 * @param thirdNumber
+	 * @return 
+	 */
+	public double modulusComplex(double firstNumber, double secondNumber, double thirdNumber)
+	{
+		double val = (firstNumber % secondNumber) % thirdNumber;
+		return val;
+	}
     
 }
