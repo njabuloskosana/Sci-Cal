@@ -15,7 +15,7 @@ public class ArithmeticOperators {
 
 	}
 
-    //Add comments
+    //two numbers divided by each other
     public double division(double firstNumber, double secondNumber) {
 		//Add your code
 		return 0.0;
