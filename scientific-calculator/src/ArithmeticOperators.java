@@ -176,7 +176,7 @@ public class ArithmeticOperators {
 		double sum2 = j * j;
 		double sum3 = sum1 + sum2;
 		double sum4 = Math.sqrt(sum3);
-		return sum;
+		return sum4;
 
 	}
 	/* The circle formula  is Pie * r squared 
@@ -187,7 +187,9 @@ public class ArithmeticOperators {
 		double sum1 = (v*v);
 		double sum2 = Math.PI * sum1;
 		return sum2;
+	
 	}
+
 	public double sine(double w1, double w2){
 		double sum1 = w1/w2;
 		double sum2 = Math.sin(sum1);
