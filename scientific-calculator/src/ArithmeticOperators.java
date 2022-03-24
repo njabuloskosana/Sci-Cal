@@ -189,7 +189,11 @@ public class ArithmeticOperators {
 		return sum2;
 	
 	}
-
+/* The sine of the opposite and hypotenuse is found by dividing the opp by the 
+hypotenuse by each other. 
+opp = w1
+hyp = w2
+the sine is derived using Math.sin. */
 	public double sine(double w1, double w2){
 		double sum1 = w1/w2;
 		double sum2 = Math.sin(sum1);
