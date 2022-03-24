@@ -27,7 +27,7 @@ public class Calculator {
 			System.out.println("Your result is : "+ score);
             scan.close();
 			break;
-			
+
 		case 2:
 			double c, d;
 			System.out.println("Enter first value");
@@ -89,6 +89,35 @@ public class Calculator {
 		default:
 			System.out.println("Wrong choice");
 			break;
+
+		case 7:
+			double n, o, p;
+			System.out.println("Enter first value");
+			n = scan.nextDouble();
+			System.out.println("Enter second value");
+			o = scan.nextDouble();
+			System.out.println("Enter third value");
+			p = scan.nextDouble();
+			score = calc.quadPositive(n,o,p);
+			System.out.println("Your result is : "+ score);
+			scan.close();
+        	break;
+			
+		case 8:
+			double q, r, s;
+			System.out.println("Enter first value");
+			q = scan.nextDouble();
+			System.out.println("Enter second value");
+			r = scan.nextDouble();
+			System.out.println("Enter third value");
+			s = scan.nextDouble();
+			score = calc.quadNegative(q,r,s);
+			System.out.println("Your result is : "+ score);
+			scan.close();
+        	break;	
+
+
+
 		}
 
 	}
