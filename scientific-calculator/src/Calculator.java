@@ -6,6 +6,7 @@ import java.util.Scanner;
  */
 
 public class Calculator {
+	
 	Scanner scan = new Scanner(System.in); 
 	public static void main(String[] args) {
 		ArithmeticOperators calc = new ArithmeticOperators();
@@ -86,10 +87,7 @@ public class Calculator {
 			System.out.println("Your result is : " + modulusComplexResult);
             scan.close();
 			break;
-		default:
-			System.out.println("Wrong choice");
-			break;
-
+		
 		case 7:
 			double n, o, p;
 			System.out.println("Enter first value");
@@ -134,21 +132,84 @@ public class Calculator {
 
 		case 10:
 			double a1, a2, b1, b2;
-			System.out.println("Enter first value");
+			System.out.println("Enter a1 value");
 			a1 = scan.nextDouble();
-			System.out.println("Enter second value");
+			System.out.println("Enter a2 value");
 			a2 = scan.nextDouble();
-			System.out.println("Enter third value");
+			System.out.println("Enter b1 value");
 			b1 = scan.nextDouble();
-			System.out.println("Enter forth value");
+			System.out.println("Enter b2 value");
 			b2 = scan.nextDouble();
-			score = calc.distance(a1,a2,b1,b2);
+			score = calc.slope(a1,a2,b1,b2);
 			System.out.println("Slope is : "+ score);
 			scan.close();
         	break;
+		
+
+		/*case 11:
+			double c1, c2, d1, d2;
+			System.out.println("Enter first value");
+			c1 = scan.nextDouble();
+			System.out.println("Enter second value");
+			c2 = scan.nextDouble();
+			System.out.println("Enter third value");
+			d1 = scan.nextDouble();
+			System.out.println("Enter forth value");
+			d2 = scan.nextDouble();
+			score = calc.midpoint(c1,c2,d1,d2);
+			System.out.println("Slope is : "+ score);
+			scan.close();
+        	break;*/
+
+		case 12:
+			double t1;
+			double t2;
+			System.out.println("Please enter base value");
+			t1= scan.nextDouble();
+			System.out.println("Please enter height value");
+			t2 = scan.nextDouble();
+			score = calc.trianglearea(t1, t2);
+			System.out.println("Your result is : " + score);
+            scan.close();
+			break;	
+
+		case 13:
+			double i;
+			double j;
+			System.out.println("Please enter i value");
+			i= scan.nextDouble();
+			System.out.println("Please enter j value");
+			j = scan.nextDouble();
+			score = calc.pythag(i, j);
+			System.out.println("Your result of k is : " + score);
+            scan.close();
+			break;	
+
+		case 14:
+			double v;
+			System.out.println("Please enter radius value");
+			v = scan.nextDouble();
+			score = calc.cirlcearea(v);
+			System.out.println("Your circle area is : " + score);
+            scan.close();
+			break;	
+
+		case 15:
+			double w1;
+			double w2;
+			System.out.println("Please enter opposite value");
+			w1 = scan.nextDouble();
+			System.out.println("Please enter hypotenuse value");
+			w2 = scan.nextDouble();
+			score = calc.sine(w1,w2);
+			System.out.println("Your result of k is : " + score);
+            scan.close();
+			break;
+
+		default:
+			System.out.println("Wrong choice");
+			break;
 		}
-
-
 	}
 
 }
