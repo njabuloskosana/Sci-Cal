@@ -14,6 +14,7 @@ public class ArithmeticOperators {
 		System.out.println("6.Modulus Complex");
 		System.out.println("7.Quad Posistive");
 		System.out.println("8.Quad Negative");
+		System.out.println("9.Distance");
 	}
 
     //function divides two numbers by each other
@@ -100,7 +101,21 @@ public class ArithmeticOperators {
 		double result = -r - set4;
 		return result;	
 		}
+/* the formula breaks down the distance formula equation into 4 parts.
+The first calulation is to find the difference of x1 and x2 the square the answer.
+The second calculation is to find the difference between y1 and y2, then square the answer.
+ The third part is to add the result of (x1-x2) squared and (yz-y1) squared
+ The final is to square root the answer using the Math.sqrt. */
+	public double distance(double x1, double x2, double y1, double y2) {
 
+		double equation1 = (x1-x2);
+		double equation2 = Math.pow(equation1,2);
+		double equation3 = (y1-y2);
+		double equation4 = Math.pow(equation3,2);
+		double equation5 = Math.sqrt(equation2 + equation4);
+		return equation5;
+	}
+		
 
     public double subtraction(double c, double d) {
         return 0;
