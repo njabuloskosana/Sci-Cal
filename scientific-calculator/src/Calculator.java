@@ -27,18 +27,40 @@ public class Calculator {
 			System.out.println("Your result is : "+ score);
             scan.close();
 			break;
+			
 		case 2:
-			// Add your code
-            scan.close();
+			double c, d;
+			System.out.println("Enter first value");
+			c = scan.nextDouble();
+			System.out.println("Enter second value");
+			d = scan.nextDouble();
+			score = calc.subtraction(c,d);
+			System.out.println("Your result is : "+ score);
+			scan.close();
 			break;
+
 		case 3:
-			// Add your code
-            scan.close();
+			double e, f;
+			System.out.println("Enter first value");
+			e = scan.nextDouble();
+			System.out.println("Enter second value");
+			f = scan.nextDouble();
+			score = calc.mutliplication(e,f);
+			System.out.println("Your result is : "+ score);
+			scan.close();
 			break;
+
 		case 4:
-			// Add your code
-            scan.close();
+			double g, h;
+			System.out.println("Enter first value");
+			g = scan.nextDouble();
+			System.out.println("Enter second value");
+			h = scan.nextDouble();
+			score = calc.division(g,h);
+			System.out.println("Your result is : "+ score);
+			scan.close();
 			break;
+
 		case 5:
 			double first;
 			double second;

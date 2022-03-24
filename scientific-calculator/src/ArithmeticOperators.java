@@ -7,7 +7,7 @@ public class ArithmeticOperators {
 
     public void showMenu() {
 		System.out.println("1.Addition");
-		System.out.println("2.Substraction");
+		System.out.println("2.Subtraction");
 		System.out.println("3.Multiplication");
 		System.out.println("4.Division");
 		System.out.println("5.Modulus");
@@ -15,22 +15,22 @@ public class ArithmeticOperators {
 
 	}
 
-    //two numbers divided by each other
+    //function divides two numbers by each other
     public double division(double firstNumber, double secondNumber) {
-		//Add your code
-		return 0.0;
+		double val = firstNumber / secondNumber;
+		return val;
 	}
 
-    //Add comments
+    //function multiplies two numbers by each other
 	public double mutliplication(double firstNumber, double secondNumber) {
-		//Add your code
-		return 0.0;
+		double val = firstNumber * secondNumber;
+		return val;
 	}
 
-    //Add comments
+    //Function subtracts the first number from the second number
 	public double substraction(double firstNumber, double secondNumber) {
-		//Add your code
-		return 0.0;
+		double val = firstNumber - secondNumber;
+		return val;
 	}
 
     /**
