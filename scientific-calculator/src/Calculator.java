@@ -99,7 +99,7 @@ public class Calculator {
 			System.out.println("Enter third value");
 			p = scan.nextDouble();
 			score = calc.quadPositive(n,o,p);
-			System.out.println("Your result is : "+ score);
+			System.out.println("QuadPositive is : "+ score);
 			scan.close();
         	break;
 			
@@ -112,7 +112,7 @@ public class Calculator {
 			System.out.println("Enter third value");
 			s = scan.nextDouble();
 			score = calc.quadNegative(q,r,s);
-			System.out.println("Your result is : "+ score);
+			System.out.println("QuadNegative is : "+ score);
 			scan.close();
         	break;	
 
@@ -124,14 +124,30 @@ public class Calculator {
 			x2 = scan.nextDouble();
 			System.out.println("Enter third value");
 			y1 = scan.nextDouble();
-			System.out.println("Enter third value");
+			System.out.println("Enter forth value");
 			y2 = scan.nextDouble();
 			score = calc.distance(x1,x2,y1,y2);
-			System.out.println("Your result is : "+ score);
+			System.out.println("Distance is : "+ score);
+			scan.close();
+			break;
+
+
+		case 10:
+			double a1, a2, b1, b2;
+			System.out.println("Enter first value");
+			a1 = scan.nextDouble();
+			System.out.println("Enter second value");
+			a2 = scan.nextDouble();
+			System.out.println("Enter third value");
+			b1 = scan.nextDouble();
+			System.out.println("Enter forth value");
+			b2 = scan.nextDouble();
+			score = calc.distance(a1,a2,b1,b2);
+			System.out.println("Slope is : "+ score);
 			scan.close();
         	break;
-
 		}
+
 
 	}
 

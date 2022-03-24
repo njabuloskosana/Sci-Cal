@@ -15,6 +15,7 @@ public class ArithmeticOperators {
 		System.out.println("7.Quad Posistive");
 		System.out.println("8.Quad Negative");
 		System.out.println("9.Distance");
+		System.out.println("10.Slope");
 	}
 
     //function divides two numbers by each other
@@ -121,5 +122,16 @@ The second calculation is to find the difference between y1 and y2, then square 
         return 0;
     }
     
-	
+	/* Slope formula requires 4 variables a1,a2, b1,b2 to be divided 
+	into each other in the formula
+	Slope = b2-b1 / a2-a1  */
+
+	public double slope(double a1, double a2, double b1, double b2) {
+
+		double sum1 = (b2 -b1);
+		double sum2 = (a2 - a1);
+		double sum3 = (sum1 / sum2);
+		return sum3;
+	}
+
 }
