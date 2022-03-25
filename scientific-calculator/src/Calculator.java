@@ -90,11 +90,11 @@ public class Calculator {
 		
 		case 7:
 			double n, o, p;
-			System.out.println("Enter first value");
+			System.out.println("Enter n value");
 			n = scan.nextDouble();
-			System.out.println("Enter second value");
+			System.out.println("Enter o value");
 			o = scan.nextDouble();
-			System.out.println("Enter third value");
+			System.out.println("Enter p value");
 			p = scan.nextDouble();
 			score = calc.quadPositive(n,o,p);
 			System.out.println("QuadPositive is : "+ score);
@@ -103,11 +103,11 @@ public class Calculator {
 			
 		case 8:
 			double q, r, s;
-			System.out.println("Enter first value");
+			System.out.println("Enter q value");
 			q = scan.nextDouble();
-			System.out.println("Enter second value");
+			System.out.println("Enter r value");
 			r = scan.nextDouble();
-			System.out.println("Enter third value");
+			System.out.println("Enter s value");
 			s = scan.nextDouble();
 			score = calc.quadNegative(q,r,s);
 			System.out.println("QuadNegative is : "+ score);
@@ -148,16 +148,16 @@ public class Calculator {
 
 		case 11:
 			double c1, c2, d1, d2;
-			System.out.println("Enter first value");
+			System.out.println("Enter c1 value");
 			c1 = scan.nextDouble();
-			System.out.println("Enter second value");
+			System.out.println("Enter c2 value");
 			c2 = scan.nextDouble();
-			System.out.println("Enter third value");
+			System.out.println("Enter d1 value");
 			d1 = scan.nextDouble();
-			System.out.println("Enter forth value");
+			System.out.println("Enter d2 value");
 			d2 = scan.nextDouble();
 			String midpoint = calc.midpoint(c1,c2,d1,d2);
-			System.out.println("Yout midpoint is : "+ midpoint);
+			System.out.println("Your midpoint is : "+ midpoint);
 			scan.close();
         	break;
 

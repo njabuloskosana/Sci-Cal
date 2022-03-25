@@ -88,8 +88,8 @@ public class ArithmeticOperators {
 		double set1 = (o * o) - ( 4 * n * p);
 		double set2 = (2 * n);
 		double set3 = Math.sqrt(set1);
-		double set4 = set3 / set2 ;
-		double result = -o + set4;
+		double set4 = -o + set3;
+		double result = set4 / set2 ;
 		return result;
 	}
 		/* this function breaks down the quadratic equation to three basic
@@ -103,9 +103,9 @@ public class ArithmeticOperators {
 		double set1 = (r * r) - ( 4 * q * s);
 		double set2 = (2 * q);
 		double set3 = Math.sqrt(set1);
-		double set4 = set3 / set2 ;
-		double result = -r - set4;
-		return result;	
+		double set4 = -r - set3;
+		double result = set4/set2;
+		return result;
 		}
 	/* the formula breaks down the distance formula equation into 4 parts.
 		The first calulation is to find the difference of x1 and x2 the square the answer.
@@ -138,6 +138,7 @@ public class ArithmeticOperators {
 		double sum3 = (sum2 / sum1);
 		return sum3;
 	}
+
 	/* There are 3 parts to the midpoint formula.
 	using the values c1,c2, d1 and d2. 
 	The first is (c1+c2)/2 as coordinate 1.
@@ -145,7 +146,6 @@ public class ArithmeticOperators {
 	The doubles will be converted into a string using the syntax String.valeOf
 	return the result.
 	*/
-
 	public String midpoint(double c1, double c2, double d1, double d2) {
 
 		double coordinate1 = (c1 + c2)/2;
