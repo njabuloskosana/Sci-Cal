@@ -146,7 +146,7 @@ public class Calculator {
         	break;
 		
 
-		/*case 11:
+		case 11:
 			double c1, c2, d1, d2;
 			System.out.println("Enter first value");
 			c1 = scan.nextDouble();
@@ -156,10 +156,10 @@ public class Calculator {
 			d1 = scan.nextDouble();
 			System.out.println("Enter forth value");
 			d2 = scan.nextDouble();
-			score = calc.midpoint(c1,c2,d1,d2);
-			System.out.println("Slope is : "+ score);
+			String midpoint = calc.midpoint(c1,c2,d1,d2);
+			System.out.println("Yout midpoint is : "+ midpoint);
 			scan.close();
-        	break;*/
+        	break;
 
 		case 12:
 			double t1;

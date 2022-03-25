@@ -138,23 +138,25 @@ public class ArithmeticOperators {
 		double sum3 = (sum2 / sum1);
 		return sum3;
 	}
-	/* There are 4 parts to the midpoint formula.
+	/* There are 3 parts to the midpoint formula.
 	using the values c1,c2, d1 and d2. 
-	The first is (c1+c2) as sum1 as part 2 will the be divided by 2 as sum 2
-	sum two will be the result of the first point
-	Part 3 will tabe (d1+d2)as sum 3 next will divide by 2 as sum 4 and then
-	Sum4 will be the result of the second point
+	The first is (c1+c2)/2 as coordinate 1.
+	(d1+d2)/2 as coordinate 2.
+	The doubles will be converted into a string using the syntax String.valeOf
+	return the result.
 	*/
-	/*public double midpoint1(double c1, double c2, double d1, double d2) {
 
-		double sum1 = (c1 + c2);
-		double sum2 = sum1 / 2;
-		return sum2; 
-		double sum3 = (d1 + d2);
-		double sum4 = sum3 / 2;
-		return sum4;
-		double sum5 = (sum2 + "," + sum4)*/
+	public String midpoint(double c1, double c2, double d1, double d2) {
 
+		double coordinate1 = (c1 + c2)/2;
+		double coordinate2 = (d1 + d2)/2;
+	
+		String result = "(" + String.valueOf(coordinate1) + "," + String.valueOf(coordinate2) + ")";
+		return result;
+    }
+
+    
+	
 	/* Triangle area is found using 1/2 base multiplied by the height
 	where the base = t1
 	height =t2*/
