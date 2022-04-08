@@ -12,13 +12,13 @@ public class ArithmeticOperators {
 		System.out.println("4.Division");
 	}
 
-    //Add comment
+    //performs division
     public double division(double firstNumber, double secondNumber) {
 		//Add your code
 		return 0.0;
 	}
 
-    //Add comment
+    //perfoms multiplication
 	public double mutliplication(double firstNumber, double secondNumber) {
 		//Add your code
 		return 0.0;
