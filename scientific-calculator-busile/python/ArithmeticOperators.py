@@ -5,23 +5,22 @@ class ArithmeticOperators:
         print("3.Multiplication")
         print("4.Division")
 
-    #Add comment
-    def addition(self,firstNumber,secondNumber):
-        #Add code
-        result=firstNumber+secondNumber
-        return result
+    #function will calculate addition operation 
+    def addition(self,uefa,europa):
+        champions=uefa+europa
+        return champions
 
-    #Add comment
-    def subtraction(self,firstNumber,secondNumber):
-        #Add code
-        return 0 
+    #function will calculate subtraction operation
+    def subtraction(self,penalty,freekick):
+        fouls=penalty-freekick
+        return fouls
 
-    #Add comment
-    def multiplication(self,firstNumber,secondNumber):
-        #Add code
-        return 0
+    #function will calculate multiplication operation
+    def multiplication(self,cassperNumber,naakNumber):
+        res=cassperNumber*naakNumber
+        return res
 
-    #Add comment
+    #function will calculate division operation
     def division(self,firstNumber,secondNumber):
-        #Add code
-        return 0
+        result=firstNumber/secondNumber
+        return result
